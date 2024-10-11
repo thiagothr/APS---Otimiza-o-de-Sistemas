@@ -20,8 +20,8 @@ Atividade Supervisionada – Otimização de Sistemas
  - IDE online: Google Colab
 
 
-Escopo do Projeto
-Este projeto tem como foco a construção de um algoritmo de otimização baseado no problema da mochila para montar uma carteira de investimentos. O objetivo é maximizar o retorno esperado de uma carteira de ativos financeiros, considerando um limite de risco aceitável (capacidade da mochila). A implementação segue três etapas: modelagem matemática, implementação em Python, e visualização dos resultados.
+## Escopo do Projeto
+- Este projeto tem como foco a construção de um algoritmo de otimização baseado no problema da mochila para montar uma carteira de investimentos. O objetivo é maximizar o retorno esperado de uma carteira de ativos financeiros, considerando um limite de risco aceitável (capacidade da mochila). A implementação segue três etapas: modelagem matemática, implementação em Python, e visualização dos resultados.
 
 Funcionalidades
 Coleta de Dados de Ativos:
