@@ -45,6 +45,29 @@ Gráficos da fronteira eficiente mostrando o equilíbrio entre retorno esperado 
 ## Resultados
 ![download](https://github.com/user-attachments/assets/e7f0b78c-5567-47d8-8b6e-fe263f5c0892)
 
+Resultados:
+Pesos Ótimos da Carteira: Os pesos ótimos indicam a porcentagem de cada ativo na carteira otimizada. No seu resultado, temos:
+
+AAPL: 28.96%
+
+MSFT: 0%
+
+GOOGL: 0%
+
+AMZN: 0%
+
+TSLA: 71.04%
+
+Isso significa que a carteira otimizada sugere investir uma grande proporção em TSLA e uma quantidade significativa em AAPL, ignorando os outros ativos para maximizar o retorno esperado com o menor risco possível.
+
+Retorno Esperado:
+
+Retorno Esperado: 0.61 (ou 61% anualizado). Este é o retorno médio que você pode esperar obter anualmente com a carteira otimizada.
+
+Risco:
+
+Risco: 0.58 (ou 58% anualizado). Este é o desvio padrão dos retornos da carteira, representando a volatilidade anualizada.
+
 
 
 ## Arquitetura do Projeto
