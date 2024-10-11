@@ -1,6 +1,6 @@
 # APS-Otimização-de-Sistemas
 
-Atividade Supervisionada – Dispositivos Móveis
+Atividade Supervisionada – Otimização de Sistemas
 ## Informações do Aluno
 
  -  Disciplina: `Otimização de Sistemas`
