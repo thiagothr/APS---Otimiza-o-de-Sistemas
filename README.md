@@ -21,7 +21,7 @@ Atividade Supervisionada – Otimização de Sistemas
 
 
 ## Escopo do Projeto
-- Este projeto tem como foco a construção de um algoritmo de otimização baseado no problema da mochila para montar uma carteira de investimentos. O objetivo é maximizar o retorno esperado de uma carteira de ativos financeiros, considerando um limite de risco aceitável (capacidade da mochila). A implementação segue três etapas: modelagem matemática, implementação em Python, e visualização dos resultados.
+- Este projeto tem como foco a construção de um algoritmo de otimização baseado no problema da mochila para montar uma carteira de investimentos. O objetivo é maximizar o retorno esperado de uma carteira de ativos financeiros, considerando um limite de risco aceitável (capacidade da mochila). A implementação segue três etapas: modelagem matemática, implementação em Python, e visualização dos resultados. Toda a resolução do projeto se econtra no arquivo `APS Otimização_de_sistemas.ipynb` encontrada no inicio
 
 Funcionalidades
 - Coleta de Dados de Ativos:
@@ -40,6 +40,12 @@ Implementação de uma função objetivo para maximizar o retorno esperado da ca
 Gráficos da fronteira eficiente mostrando o equilíbrio entre retorno esperado e risco.
 
 - Cálculo e exibição dos pesos ótimos da carteira.
+
+
+## Resultados
+![download](https://github.com/user-attachments/assets/e7f0b78c-5567-47d8-8b6e-fe263f5c0892)
+
+
 
 ## Arquitetura do Projeto
 A implementação utiliza diversas bibliotecas em Python, como numpy, pandas, scipy.optimize, matplotlib e seaborn. Estas ferramentas são essenciais para a manipulação de dados, otimização e visualização dos resultados.
