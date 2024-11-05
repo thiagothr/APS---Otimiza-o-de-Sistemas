@@ -34,6 +34,10 @@ Implementação de uma função objetivo para maximizar o retorno esperado da ca
 
 - Utilização do Sharpe Ratio como critério de otimização.
 
+
+
+
+
 - Restrições que garantem que a soma dos pesos dos ativos na carteira seja igual a 1.
 
 - Visualização dos Resultados:
@@ -42,34 +46,98 @@ Gráficos da fronteira eficiente mostrando o equilíbrio entre retorno esperado 
 - Cálculo e exibição dos pesos ótimos da carteira.
 
 
+
 ## Resultados
 ![download](https://github.com/user-attachments/assets/e7f0b78c-5567-47d8-8b6e-fe263f5c0892)
 
-Resultados:
-Pesos Ótimos da Carteira: Os pesos ótimos indicam a porcentagem de cada ativo na carteira otimizada. No seu resultado, temos:
+Pesos Ótimos da Carteira
+Os pesos ótimos indicam a proporção ideal de investimento em cada ativo da carteira para maximizar o retorno esperado ajustado ao risco (Sharpe Ratio). Esses pesos refletem a alocação mais eficiente dos ativos, com alguns ativos podendo receber 0% de alocação caso não contribuam significativamente para otimizar o desempenho da carteira. Por exemplo:
 
 AAPL: 28.96%
-
-MSFT: 0%
-
-GOOGL: 0%
-
-AMZN: 0%
-
 TSLA: 71.04%
+MSFT, GOOGL, AMZN: 0%
+Essa alocação sugere um investimento concentrado em TSLA e AAPL, com exclusão dos outros ativos para atingir o melhor equilíbrio entre risco e retorno, de acordo com o modelo.
 
-Isso significa que a carteira otimizada sugere investir uma grande proporção em TSLA e uma quantidade significativa em AAPL, ignorando os outros ativos para maximizar o retorno esperado com o menor risco possível.
-
-Retorno Esperado:
-
-Retorno Esperado: 0.61 (ou 61% anualizado). Este é o retorno médio que você pode esperar obter anualmente com a carteira otimizada.
-
-Risco:
-
-Risco: 0.58 (ou 58% anualizado). Este é o desvio padrão dos retornos da carteira, representando a volatilidade anualizada.
-
+Retorno Esperado
+Retorno Anualizado: 0.61 (ou 61%). Esse é o retorno médio anualizado esperado com a carteira otimizada. Esse valor representa o potencial de retorno baseado nos dados históricos, embora resultados reais possam variar devido à volatilidade do mercado e a eventos futuros não previstos.
+Risco
+Risco Anualizado (Desvio Padrão): 0.58 (ou 58%). Esse valor representa a volatilidade anualizada da carteira otimizada, indicando o grau de variação que os retornos podem apresentar ao longo de um ano. Quanto menor o desvio padrão, mais estável tende a ser o desempenho da carteira.
+Arquitetura do Projeto
+Este projeto utiliza diversas bibliotecas para manipulação de dados, otimização e visualização:
 
 
-## Arquitetura do Projeto
-A implementação utiliza diversas bibliotecas em Python, como numpy, pandas, scipy.optimize, matplotlib e seaborn. Estas ferramentas são essenciais para a manipulação de dados, otimização e visualização dos resultados.
+### Pesos Ótimos da Carteira
+
+A tabela abaixo mostra a alocação ideal de cada ativo na carteira após a otimização. Esses pesos representam a proporção recomendada de investimento em cada ativo para alcançar a melhor relação entre retorno e risco.
+
+| Ticker | Peso (%) |
+|--------|----------|
+| AAPL   | 28.96    |
+| MSFT   | 0        |
+| GOOGL  | 0        |
+| AMZN   | 0        |
+| FB     | 0        |
+| TSLA   | 71.04    |
+| NVDA   | 0        |
+| BRK-B  | 0        |
+| JPM    | 0        |
+| JNJ    | 0        |
+| V      | 0        |
+| UNH    | 0        |
+| HD     | 0        |
+| PG     | 0        |
+| MA     | 0        |
+| DIS    | 0        |
+| VZ     | 0        |
+| ADBE   | 0        |
+| NFLX   | 0        |
+| CRM    | 0        |
+| INTC   | 0        |
+| KO     | 0        |
+| CMCSA  | 0        |
+| PEP    | 0        |
+| PFE    | 0        |
+| CSCO   | 0        |
+| XOM    | 0        |
+| T      | 0        |
+| ABT    | 0        |
+| NKE    | 0        |
+| MRK    | 0        |
+| BA     | 0        |
+| WMT    | 0        |
+| MCD    | 0        |
+| AMD    | 0        |
+| MMM    | 0        |
+| IBM    | 0        |
+| ORCL   | 0        |
+| GE     | 0        |
+| HON    | 0        |
+| TXN    | 0        |
+| AMGN   | 0        |
+| LOW    | 0        |
+| CAT    | 0        |
+| SPGI   | 0        |
+| MS     | 0        |
+| INTU   | 0        |
+| LMT    | 0        |
+| CVX    | 0        |
+
+### Retorno Esperado
+
+- **Retorno Anualizado**: 0.61 (ou 61%). Esse é o retorno médio anualizado esperado com a carteira otimizada.
+
+### Risco
+
+- **Risco Anualizado (Desvio Padrão)**: 0.58 (ou 58%). Esse valor representa a volatilidade anualizada da carteira.
+
+### Observações
+
+Essa alocação indica um investimento concentrado em **TSLA** e **AAPL**. Com o modelo de otimização, foi determinado que os demais ativos não contribuem significativamente para a maximização do Sharpe Ratio, por isso receberam pesos nulos.
+
+
+NumPy: para operações numéricas e manipulação de arrays.
+Pandas: para coleta, organização e manipulação de dados financeiros.
+SciPy (optimize): para resolver o problema de maximização do Sharpe Ratio, central no processo de otimização de portfólio.
+Matplotlib: para visualização gráfica da Fronteira Eficiente, facilitando a análise dos trade-offs entre risco e retorno.
+Essa combinação de ferramentas permite construir uma carteira bem fundamentada e adaptada ao perfil de risco/retorno desejado, utilizando dados históricos e técnicas de otimização quantitativa.
 
